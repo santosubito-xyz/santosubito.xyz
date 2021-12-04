@@ -40,12 +40,12 @@ $('.buildmap').click(function (e) {
     var cell = $('input.cell').val();
     var mine = $('input.mine').val();
     if ( row < 1 && cell < 1 && mine < 1 ) {
-      alert("Mine Or Cell Or Mines should be positive and greater than 1!");
+      alert("Liczba min lub pol musi byc wieksza niz 1!");
       e.preventDefault();
       return
     }
     if (mine > row * cell) {
-        alert('Mine should be less than ' + row * cell + '!');
+        alert('min powinno byc mniej niz' + row * cell + '!');
         e.preventDefault();
         return;
     }
