@@ -23,7 +23,14 @@
             #content {
                 height: calc(100% - 5vh);
                 width: calc(100% - 5vh);
-		        text-align: center;
+		        
+            }
+
+            #header {
+                display:flex;
+                text-align:right;
+                padding:6px
+
             }
 
             .footer {
@@ -43,12 +50,17 @@
             }
         </style>
     </head>
+    <script src="js/skrypcik.js"></script>
+    <script src="js/jquery.min.js"></script>
     <body style="text-align: center;">
-<div id="content">
+    <div id="content">
+        <div id="header">
+            <br><input type="button" id="loginbtn" value="Login" onclick="redirect()"></br>
+        </div>
     <h1>[---santosubito.xyz---]</h1>
     <h3 class="text-center">Services</h3>
         <ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul>
-        <ul><a href="http://santosubito.xyz/wchat.html">WadowiceChat (ChatClient)</a></ul>
+        <ul><a href="http://santosubito.xyz/wchat/wchat.php">WadowiceChat (ChatClient)</a></ul>
         <ul><a href="http://santosubito.xyz/saper.html">Saper dla menelusa</a></ul>
         <ul><a href="http://santosubito.xyz:5050">Bilansowanie rownan chemicznych</a></ul>
         <ul><a href="http://santosubito.xyz:3000" target="_blank">AgarIO dla menelusa</a></ul>
@@ -56,11 +68,10 @@
         <a href="mailto:antonio0806123@gmail.com">E-Mail</a>
         <a href=""></a>
     <div class="footer">
-        <p>Copyright by Antonio0806 2021 Privacy policy: <a href="http://santosubito.xyz/ppolicy.html">click</a></p>
+        <p>Copyright by Antonio0806 2021 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
 	<!-- <p>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!</p> --> <!-- Specjalnie dla menelusa -->
     </div>  
 </div>        
-        <script src="js/skrypcik.js"></script>
         <script type="text/javascript">
             var gHue = 0.0;
             var gHueContainer = 0.01;
@@ -87,6 +98,20 @@
                 gHue = (gHue + 0.01) % 1.0;
                 gHueContainer = (gHueContainer + 0.01) % 1.0;
             }, 100);
+            function redirect() {
+            var ua        = navigator.userAgent.toLowerCase(),
+               isIE      = ua.indexOf('msie') !== -1,
+            version   = parseInt(ua.substr(4, 2), 10);
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = "http://santosubito.xyz/";
+                document.body.appendChild(link);
+                link.click();
+            }
+            else { 
+                window.location.href = "http://santosubito.xyz/"; 
+            }
+}
         </script>
     </body>
 </html>
