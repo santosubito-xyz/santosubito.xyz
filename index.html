@@ -20,7 +20,7 @@
                 
             }
 
-            #content {
+            #content, #login_content {
                 height: calc(100% - 5vh);
                 width: calc(100% - 5vh);
 		        
@@ -42,7 +42,7 @@
                 text-align: center;
             }
             @media screen and (max-width: 481px){
-                #content {
+                #content, #login_content {
 
                     text-align: center;
 
@@ -53,12 +53,21 @@
     <script src="js/skrypcik.js"></script>
     <script src="js/jquery.min.js"></script>
     <body style="text-align: center;">
-    <div id="content">
         <div id="header">
-            [<a href="http://santosubito.xyz/login.html">login</a>]
+            <!-- [<a href="http://santosubito.xyz/login.html">login</a>] -->
+            <button onclick="login()">Login</button>
+            <button onclick="logout()">Logout</button>
         </div>
+    <div id="login_content">
+        <input type="email" placeholder="Email..." id="email_field"/>
+        <input type="password" placeholder="Password..." id="password_field"/>
+        <button onclick="login()">Login to account</button>
+
+    </div>
+    <div id="content">
     <img src="./banner.png"></img>
     <h1>[---santosubito.xyz---]</h1>
+    <h2 id="welcomemsg"></h2>
     <h3 class="text-center">Services</h3>
         <ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul>
         <ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
@@ -77,6 +86,11 @@
         <script type="text/javascript">
             var gHue = 0.0;
             var gHueContainer = 0.01;
+            window.onload = load;
+            function load() {
+                document.getElementById("login_content").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }
             function hsvToRgb(h, s, v) {
                 var r, g, b;
                 var i = Math.floor(h * 6);
@@ -115,6 +129,20 @@
             }
 }
         </script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+          <script>
+            
+            var config = {
+              apiKey: "AIzaSyA4hiK2F3l0PdFXYk3iP2lxjhFuo0OnpbE",
+              authDomain: "santosubito.firebaseapp.com",
+              databaseURL: "https://santosubito.firebaseio.com",
+              projectId: "santosubito",
+              storageBucket: "santosubito.appspot.com",
+              messagingSenderId: "349007644190"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>
 
