@@ -1,4 +1,4 @@
- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>santosubito.xyz</title>
@@ -55,33 +55,18 @@
     <script src="js/skrypcik.js"></script>
     <script src="js/jquery.min.js"></script>
     <body style="text-align: center;">
-        <div id="header">
-            <!-- [<a href="http://santosubito.xyz/login.html">login</a>] -->
-            <button onclick="login()">Login</button>
-            <button onclick="logout()">Logout</button>
-        </div>
-    <div id="login_content">
-        <input type="email" placeholder="Email..." id="email_field"/>
-        <input type="password" placeholder="Password..." id="password_field"/>
-        <button onclick="login()">Login to account</button>
-
-    </div>
     <div id="content">
     <img width="700px" height="200px"src="./banner.png"></img>
-    <h1>[---santosubito.xyz---]</h1>
-    <h2>Wesolego nowego roku!<h2>
-    <h2 id="welcomemsg"></h2>
-    <h3 class="text-center">Services</h3>
-        <!-- <ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul> -->
-        <ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
-        <ul><a href="http://santosubito.xyz/saper.html" target="_blank">Saper</a></ul>
-        <ul><a href="http://santosubito.xyz:5050" target="_blank">Bilansowanie rownan chemicznych</a></ul>
-        <ul><a href="http://santosubito.xyz/about.html" target="_blank">About(Plz click)</a></ul>
-        <!-- <ul><a href="http://santosubito.xyz:3000" target="_blank">AgarIO dla menelusa</a></ul> -->
-        
-    <h3 class="text-center">Contact</h3>
-        <a href="mailto:antonio0806123@gmail.com">E-Mail</a>
-        <a href=""></a>
+    <h1>[---About the site---]</h1>
+    <h2>Prologue</h2>
+        <h3>In general, I made this website because I didn't have much to do and I was bored.</h3>
+        <h3>The website went through a lot of changes over the past few months. The project went from a 4fun project to a project with the biggest number of commits on my github.</h3>
+        <h3>I was thinking about advertising the site somewhere but I don't think that is a good idea because it isn't cheap. Also I think that the site should remain as is.</h3>
+        <h3>I will make future changes and commits of course, but I don't want to put ads on my site unless I have to. So here I have a request to You, dear reader. If you have </h3>
+        <h3>some spare change please donate so I can keep the site online with the button down below.</h3>
+    <h2>The main about section</h2>
+        <h3>This site is made quite for fun.</h3>
+        <a href="https://www.buymeacoffee.com/Antonio0806"><image src="./violet-button.png"> </a>
     <div class="footer">
         <p>Copyright by Antonio0806 2021 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
 	<p>Jesli moja szkola chcialaby sie ze mna skontaktowac w sprawie tego co uwazaja za nieodpowiednie/nieporzadane zapraszam na dsc: Antonio0806#2426</p>
@@ -92,11 +77,6 @@
         <script type="text/javascript">
             var gHue = 0.0;
             var gHueContainer = 0.01;
-            window.onload = load;
-            function load() {
-                document.getElementById("login_content").style.display = "none";
-                document.getElementById("content").style.display = "block";
-            }
             function hsvToRgb(h, s, v) {
                 var r, g, b;
                 var i = Math.floor(h * 6);
@@ -120,35 +100,9 @@
                 gHue = (gHue + 0.01) % 1.0;
                 gHueContainer = (gHueContainer + 0.01) % 1.0;
             }, 100);
-            function redirect() {
-            var ua        = navigator.userAgent.toLowerCase(),
-               isIE      = ua.indexOf('msie') !== -1,
-            version   = parseInt(ua.substr(4, 2), 10);
-            if (isIE && version < 9) {
-                var link = document.createElement('a');
-                link.href = "http://santosubito.xyz/login.html";
-                document.body.appendChild(link);
-                link.click();
-            }
-            else { 
-                window.location.href = "http://santosubito.xyz/login.html"; 
-            }
-}
+           
         </script>
-        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-          <script>
-            
-            var config = {
-              apiKey: "AIzaSyA4hiK2F3l0PdFXYk3iP2lxjhFuo0OnpbE",
-              authDomain: "santosubito.firebaseapp.com",
-              databaseURL: "https://santosubito.firebaseio.com",
-              projectId: "santosubito",
-              storageBucket: "santosubito.appspot.com",
-              messagingSenderId: "349007644190"
-            };
-            firebase.initializeApp(config);
-        </script>
-        <script src="js/main.js"></script>
+
     </body>
 </html>
 
