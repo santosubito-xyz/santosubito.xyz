@@ -1,3 +1,4 @@
 # santosubito.xyz
-It is the website located on http://santosubito.xyz/
-The website on the time being contains an image board and a chatclient.
+It is the website located on [this link.]('http://santosubito.xyz/')
+
+On the website you can find a browser version of minesweeper, a chat client, and a chemical equation balancer.
