@@ -37,6 +37,7 @@
                 color: black;
                 text-align: center;
             }
+
             @media screen and (max-width: 481px){
                 #content, #login_content {
                     text-align: center;
@@ -130,7 +131,11 @@
             else { 
                 window.location.href = "http://santosubito.xyz/login.html"; 
             }
-}
+          }
+          function reload() {
+            window.reload();
+            console.log('window reloaded');
+          }
         </script>
         <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
           <script>
