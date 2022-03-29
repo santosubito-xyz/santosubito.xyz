@@ -92,21 +92,7 @@ h4{
 
 span{
   color: red;
-}.order-now{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: white;
-  background-color: #303030;
-  padding: 15px 25px;
-  
-  margin: 0 auto;
-  border: solid 1px #303030;
-  border-radius: 5px;
-  letter-spacing: 2px;
 }
-
 
 .top-footer{
   
