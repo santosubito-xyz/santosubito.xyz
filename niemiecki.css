@@ -64,6 +64,13 @@ main{
   margin-top: 50px;
   text-align: center;
 }
+p{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 5px;
+  margin: 0;
+}
 h3{
   font-family: 'Sacramento', cursive;
   color: #f55e53;
