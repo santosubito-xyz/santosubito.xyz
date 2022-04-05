@@ -5,6 +5,7 @@
         <meta charset content="utf-8">
         <meta keywords content="papaj, jp2gmd, januszpawlacz, jp2, molte, volte, santo, subito">
         <meta author content="Antonio0806 & Maciekxx "Nowy"">
+        <link rel="text/javascript" href="./js/main.js"/>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Lato');
             body, html {
@@ -38,105 +39,80 @@
                 color: black;
                 text-align: center;
             }
-
+            #loaderball{
+                width: 30px;
+                height: 30px;
+                height: 40em;
+                position: relative;
+                animation-name: ckw;
+                animation-duration: 15.5s;
+                /* Things added */
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50%;
+                display: inline-block;
+                /* <--- */
+            }
+            @keyframes ckw {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
             @media screen and (max-width: 481px){
                 #content, #login_content {
                     text-align: center;
                 }
             }
         </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1761286589543980"
-    crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1761286589543980" crossorigin="anonymous"></script>
     
     </head>
     <script src="js/skrypcik.js"></script>
     <script src="js/jquery.min.js"></script>
     <body style="text-align: center;">
+    <div id="loader">
+        <h4>Loading...</h4>
+        <svg id="loaderball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M222.7 32.15C227.7 49.08 218.1 66.9 201.1 71.94C121.8 95.55 64 169.1 64 255.1C64 362 149.1 447.1 256 447.1C362 447.1 448 362 448 255.1C448 169.1 390.2 95.55 310.9 71.94C293.9 66.9 284.3 49.08 289.3 32.15C294.4 15.21 312.2 5.562 329.1 10.6C434.9 42.07 512 139.1 512 255.1C512 397.4 397.4 511.1 256 511.1C114.6 511.1 0 397.4 0 255.1C0 139.1 77.15 42.07 182.9 10.6C199.8 5.562 217.6 15.21 222.7 32.15V32.15z"/></svg>
+    </div>
+    <div id="maincontentdiv">
         <div id="header">
             <!-- [<a href="http://santosubito.xyz/login.html">login</a>] -->
             <button onclick="login()">Login</button>
             <button onclick="logout()">Logout</button>
         </div>
-    <div id="login_content">
+        <div id="login_content">
         <input type="email" placeholder="Email..." id="email_field"/>
         <input type="password" placeholder="Password..." id="password_field"/>
         <button onclick="login()">Login to account</button>
-    </div>
+        </div>
     
-    <div id="content">
-    <img width="700px" height="200px"src="./banner.png"></img>
-    <h1>[---santosubito.xyz---]</h1>
-    <h2 id="welcomemsg"></h2>
-    <h3 class="text-center">Services</h3>
-<!--    <ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul> -->
+        <div id="content">
+        <img width="700px" height="200px"src="./banner.png"></img>
+        <h1>[---santosubito.xyz---]</h1>
+        <h2 id="welcomemsg"></h2>
+        <h3 class="text-center">Services</h3>
+        <!--<ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul> -->
         <ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
         <ul><a href="http://santosubito.xyz/saper.html" target="_blank">Saper</a></ul>
-<!--    <ul><a href="http://santosubito.xyz:5050" target="_blank">Bilansowanie rownan chemicznych</a></ul> -->
+        <!--<ul><a href="http://santosubito.xyz:5050" target="_blank">Bilansowanie rownan chemicznych</a></ul> -->
         <ul><a href="http://santosubito.xyz/about.html" target="_blank">About(Plz click)</a></ul>
-<!--  	<ul><a href="http://santosubito.xyz/subitolauncher/" target="_blank">SubitoLauncher(NEW)</a></ul> -->
+        <!--<ul><a href="http://santosubito.xyz/subitolauncher/" target="_blank">SubitoLauncher(NEW)</a></ul> -->
         <!-- <ul><a href="http://santosubito.xyz:3000" target="_blank">AgarIO dla menelusa</a></ul> -->
         
-    <h3 class="text-center">Contact</h3>
-        <a href="mailto:antonio0806123@gmail.com">E-Mail</a>
-        <a href=""></a>
-    <div class="footer">
-        <p>Copyright by Antonio0806 & Maciekxx "Nowy" 2022 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
+        <h3 class="text-center">Contact</h3>
+            <a href="mailto:antonio0806123@gmail.com">E-Mail</a>
+            <a href=""></a>
+        <div class="footer">
+            <p>Copyright by Antonio0806 & Maciekxx "Nowy" 2022 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
 	    
-	<!-- <p>Jesli moja szkola chcialaby sie ze mna skontaktowac w sprawie tego co uwazaja za nieodpowiednie i nieporzadane zapraszam na dsc: Antonio0806#2426</p> -->
-	<!-- <p>Pozdrawiam informatykow z mojej szkoly, ktorzy postanowili zrobic mi jakiegos smiesznego ddos=a xddddddd</p> -->
-	<!-- <p>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!</p> --> <!-- Specjalnie dla menelusa -->
-    </div>  
-</div>        
-        <script type="text/javascript">
-            var gHue = 0.0;
-            var gHueContainer = 0.01;
-            window.onload = load;
-            function load() {
-                document.getElementById("login_content").style.display = "none";
-                document.getElementById("content").style.display = "block";
-            }
-            function hsvToRgb(h, s, v) {
-                var r, g, b;
-                var i = Math.floor(h * 6);
-                var f = h * 6 - i;
-                var p = v * (1 - s);
-                var q = v * (1 - f * s);
-                var t = v * (1 - (1 - f) * s);
-                switch (i % 6) {
-                    case 0: r = v, g = t, b = p; break;
-                    case 1: r = q, g = v, b = p; break;
-                    case 2: r = p, g = v, b = t; break;
-                    case 3: r = p, g = q, b = v; break;
-                    case 4: r = t, g = p, b = v; break;
-                    case 5: r = v, g = p, b = q; break;
-                }
-                return "rgb(" + parseInt(r * 200) + ", " + parseInt(g * 200) + ", " + parseInt(b * 200) + ")";
-            }
-            setInterval(function() {
-                document.body.style.backgroundColor = hsvToRgb(gHue, 0.55, 0.75);
-                document.getElementById("content").style.backgroundColor = hsvToRgb(gHueContainer, 0.55, 0.75);
-                gHue = (gHue + 0.01) % 1.0;
-                gHueContainer = (gHueContainer + 0.01) % 1.0;
-            }, 100);
-            function redirect() {
-            var ua    = navigator.userAgent.toLowerCase(),
-               isIE   = ua.indexOf('msie') !== -1,
-            version   = parseInt(ua.substr(4, 2), 10);
-            if (isIE && version < 9) {
-                var link  = document.createElement('a');
-                link.href = "http://santosubito.xyz/login.html";
-                document.body.appendChild(link);
-                link.click();
-            }
-            else { 
-                window.location.href = "http://santosubito.xyz/login.html"; 
-            }
-          }
-          function reload() {
-            window.reload();
-            console.log('window reloaded');
-          }
-        </script>
+	    <!-- <p>Jesli moja szkola chcialaby sie ze mna skontaktowac w sprawie tego co uwazaja za nieodpowiednie i nieporzadane zapraszam na dsc: Antonio0806#2426</p> -->
+	    <!-- <p>Pozdrawiam informatykow z mojej szkoly, ktorzy postanowili zrobic mi jakiegos smiesznego ddos=a xddddddd</p> -->
+	    <!-- <p>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!</p> --> <!-- Specjalnie dla menelusa -->
+        </div>  
+        </div>
+    </div>
         <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
           <script>
             
