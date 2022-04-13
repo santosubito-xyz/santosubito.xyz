@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+#content, #login_content {
+    height: calc(100% - 5vh);
+    width: calc(100% - 5vh);
+    text-align: center;
+}
+
+#header {
+    display:block;
+    text-align:center;
+    padding:6px;
+    height: 30px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 5050;
+    color: black;
+    text-align: center;
+}
+#loaderball{
+    width: 30px;
+    height: 30px;
+    height: 40em;
+    position: relative;
+    animation-name: ckw;
+    animation-duration: 15.5s;
+    /* Things added */
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    /* <--- */
+}
+@keyframes ckw {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 481px){
+    #content, #login_content {
+        text-align: center;
+    }
+}
+.shop_container {
+    display: grid;
+    gap: 50px;
+}
+#shop_element {
+    width: 5cm;
+    height: 5cm;
+    background: transparent;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: solid 3px #000000;
+    border-radius: 7px;
+    color: #000000
+}
+button {
+    height: 15px;
+    width: 100px;
+    background: transparent;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    padding: 15px 15px;
+    border: solid 2px #020eb3;
+    border-radius: 2px;
+    color: #020eb3
+}
