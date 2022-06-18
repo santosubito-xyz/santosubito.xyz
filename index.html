@@ -65,43 +65,104 @@
                     text-align: center;
                 }
             }
-        </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1761286589543980" crossorigin="anonymous"></script>
+
+            #mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #555 /* Light Black */
+  }
+
+  #login {
+    top: 260px;
+    background-color: #550 /* Light Green */
+  }
+
+  #logout {
+    top: 320px;
+    background-color: #500 /* Dark Red */
+  }
+  #subitolauncher {
+    top: 380px;
+    background-color: #2196F3 /* Dark Red */
     
+  }
+        </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1761286589543980"
+    crossorigin="anonymous"></script>
+
+
     </head>
     <script src="js/skrypcik.js"></script>
     <script src="js/jquery.min.js"></script>
     <body style="text-align: center;">
+
+    <!--Loading screen-->
     <div id="loader">
         <h4>Loading...</h4>
         <svg id="loaderball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M222.7 32.15C227.7 49.08 218.1 66.9 201.1 71.94C121.8 95.55 64 169.1 64 255.1C64 362 149.1 447.1 256 447.1C362 447.1 448 362 448 255.1C448 169.1 390.2 95.55 310.9 71.94C293.9 66.9 284.3 49.08 289.3 32.15C294.4 15.21 312.2 5.562 329.1 10.6C434.9 42.07 512 139.1 512 255.1C512 397.4 397.4 511.1 256 511.1C114.6 511.1 0 397.4 0 255.1C0 139.1 77.15 42.07 182.9 10.6C199.8 5.562 217.6 15.21 222.7 32.15V32.15z"/></svg>
     </div>
+    <!--Loading screen-->
+
     <div id="maincontentdiv">
-        <div id="header">
-            <!-- [<a href="http://santosubito.xyz/login.html">login</a>] -->
-            <button onclick="login()">Login</button>
-            <button onclick="logout()">Logout</button>
-        </div>
         <div id="login_content">
         <input type="email" placeholder="Email..." id="email_field"/>
         <input type="password" placeholder="Password..." id="password_field"/>
         <button onclick="login()">Login to account</button>
         </div>
-    
+
+
+
         <div id="content">
         <img width="700px" height="200px"src="./banner.png"></img>
-        <h1>[---santosubito.xyz---]</h1>
         <h2 id="welcomemsg"></h2>
-        <h3 class="text-center">Services</h3>
         <!--<ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul> -->
-        <ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
+        <!--<ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
         <ul><a href="http://santosubito.xyz/saper.html" target="_blank">Saper</a></ul>
         <ul><a href="http://santosubito.xyz/balansowaniechemia" target="_blank">Bilansowanie rownan chemicznych</a></ul>
         <ul><a href="http://santosubito.xyz/about.html" target="_blank">About(Plz click)</a></ul>
-        <!--<ul><a href="http://santosubito.xyz/subitolauncher/" target="_blank">SubitoLauncher(NEW)</a></ul> -->
+        <ul><a href="http://santosubito.xyz/subitolauncher/" target="_blank">SubitoLauncher(NEW)</a></ul> -->
         <!-- <ul><a href="http://santosubito.xyz:3000" target="_blank">AgarIO dla menelusa</a></ul> -->
+          <div id="mySidenav" class="sidenav">
+            <a href="http://santosubito.xyz/about.html" id="about">About</a>
+            <a href="http://santosubito.xyz/wchat/wchat.php" id="blog">WChat</a>
+            <a href="http://santosubito.xyz/subitolauncher/" id="subitolauncher">SubitoLauncher</a>
+            <a href="http://santosubito.xyz/gallery.html" id="contact">Gallery</a>
+            <a href="http://santosubito.xyz/saper.html" id="projects">Saper</a>
+            <a onclick="login()" id="login">Login</a>
+            <a onclick="logout()" id="logout">Logout</a>
+          </div>
         
-        <h3 class="text-center">Contact</h3>
         <!-- a -->
         <ins class="adsbygoogle"
         style="display:inline-block;width:728px;height:90px"
@@ -110,8 +171,8 @@
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-            <a href="mailto:antonio0806123@gmail.com">E-Mail</a>
-            <a href=""></a>
+
+        <!-- footer -->
         <div class="footer">
             <p>Copyright by Antonio0806 & Maciekxx "Nowy" 2022 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
 	    
