@@ -8,7 +8,7 @@ function load() {
 setInterval(function() {
     document.getElementById("maincontentdiv").style.display = "block";
     document.getElementById("loader").style.display         = "none";
-}, 5000);
+}, 1500);
 function hsvToRgb(h, s, v) {
     var r, g, b;
     var i = Math.floor(h * 6);

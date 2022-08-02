@@ -6,16 +6,21 @@ html{
   background-attachment: fixed;
   background-size: cover;
 }
+
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: darkmagenta;
-}header{
+}
+
+header{
   margin-top: 30px;
   margin-bottom: 50px;
   background-color: darkmagenta;
-}.book-now{
+}
+
+.book-now{
   float: right;
   margin-right: 20px;
   background: transparent;
@@ -27,6 +32,7 @@ body{
   border-radius: 7px;
   color: #303030
 }
+
 .book-now:hover{
   -webkit-box-shadow: 0px 0px 6px 3px #303030; 
 box-shadow: 0px 0px 6px 3px #303030;
@@ -37,11 +43,6 @@ box-shadow: 0px 0px 6px 3px #303030;
   display: block; 
   clear: both;
 }
-
-
-  
-  
-
 
 h2{
   font-family: 'Oswald', sans-serif;
@@ -57,13 +58,11 @@ h2{
   border-radius: 5px;
 }
 
-
-
-
 main{
   margin-top: 50px;
   text-align: center;
 }
+
 p{
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -71,6 +70,7 @@ p{
   font-size: 15px;
   margin: 0;
 }
+
 h3{
   font-family: 'Sacramento', cursive;
   color: #f55e53;
@@ -103,12 +103,8 @@ span{
 }
 
 .top-footer{
-  
   background-color: #303030;
   margin-top: 40px;
-  
-  
-  
 }
 
 .top-footer-menu{
@@ -133,7 +129,6 @@ h5{
   font-size: 20px;
   margin-bottom: 30px;
 }
-
 
 h6{
   font-family: 'Oswald', sans-serif;
