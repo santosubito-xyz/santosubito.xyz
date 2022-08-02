@@ -67,66 +67,62 @@
             }
 
             #mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 15px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-  }
+              position: absolute; /* Position them relative to the browser window */
+              left: -80px; /* Position them outside of the screen */
+              transition: 0.3s; /* Add transition on hover */
+              padding: 15px; /* 15px padding */
+              width: 100px; /* Set a specific width */
+              text-decoration: none; /* Remove underline */
+              font-size: 15px; /* Increase font size */
+              color: white; /* White text color */
+              border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+            }
   
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
-  }
+            #mySidenav a:hover {
+              left: 0; /* On mouse-over, make the elements appear as they should */
+            }
   
-  /* The about link: 20px from the top with a green background */
-  #about {
-    top: 20px;
-    background-color: #04AA6D;
-  }
+            /* The about link: 20px from the top with a green background */
+            #about {
+              top: 20px;
+              background-color: #04AA6D; /* Lime */
+            }
   
-  #blog {
-    top: 80px;
-    background-color: #2196F3; /* Blue */
-  }
+            #blog {
+              top: 80px;
+              background-color: #2196F3; /* Blue */
+            }
   
-  #projects {
-    top: 140px;
-    background-color: #f44336; /* Red */
-  }
+            #projects {
+              top: 140px;
+              background-color: #f44336; /* Red */
+            }
   
-  #contact {
-    top: 200px;
-    background-color: #555 /* Light Black */
-  }
+            #contact {
+              top: 200px;
+              background-color: #555 /* Light Black */
+            }
 
-  #login {
-    top: 260px;
-    background-color: #550 /* Light Green */
-  }
+            #login {
+              top: 260px;
+              background-color: #550 /* Light Green */
+            }
 
-  #logout {
-    top: 320px;
-    background-color: #500 /* Dark Red */
-  }
-  #subitolauncher {
-    top: 380px;
-    background-color: #2196F3 /* Dark Red */
-    
-  }
-        </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1761286589543980"
-    crossorigin="anonymous"></script>
-
-
+            #logout {
+              top: 320px;
+              background-color: #500 /* Dark Red */
+            }
+            #subitolauncher {
+              top: 380px;
+              background-color: #2196F3 /* Light Blue */
+            }
+      </style>
+        <script src="js/main.js"></script>
+        <script src="js/skrypcik.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1761286589543980" crossorigin="anonymous"></script>
     </head>
-    <script src="js/skrypcik.js"></script>
-    <script src="js/jquery.min.js"></script>
     <body style="text-align: center;">
-
     <!--Loading screen-->
     <div id="loader">
         <h4>Loading...</h4>
@@ -137,21 +133,21 @@
     <div id="maincontentdiv">
         <div id="content">
         <img width="700px" height="200px"src="./banner.png"></img>
-        <!--<ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul> -->
-        <!--<ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
+        <!--<ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul>
+        <ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
         <ul><a href="http://santosubito.xyz/saper.html" target="_blank">Saper</a></ul>
         <ul><a href="http://santosubito.xyz/balansowaniechemia" target="_blank">Bilansowanie rownan chemicznych</a></ul>
         <ul><a href="http://santosubito.xyz/about.html" target="_blank">About(Plz click)</a></ul>
-        <ul><a href="http://santosubito.xyz/subitolauncher/" target="_blank">SubitoLauncher(NEW)</a></ul> -->
-        <!-- <ul><a href="http://santosubito.xyz:3000" target="_blank">AgarIO dla menelusa</a></ul> -->
-          <div id="mySidenav" class="sidenav">
+        <ul><a href="http://santosubito.xyz/subitolauncher/" target="_blank">SubitoLauncher(NEW)</a></ul>
+        <ul><a href="http://santosubito.xyz:3000" target="_blank">AgarIO dla menelusa</a></ul> -->
+        <div id="mySidenav" class="sidenav">
             <a href="http://santosubito.xyz/about.html" id="about">About</a>
             <a href="http://santosubito.xyz/wchat/wchat.php" id="blog">WChat</a>
             <a href="http://santosubito.xyz/subitolauncher/" id="subitolauncher">SubitoLauncher</a>
             <a href="http://santosubito.xyz/gallery.html" id="contact">Gallery</a>
             <a href="http://santosubito.xyz/saper.html" id="projects">Saper</a>
-          </div>
-        
+        </div>
+      <!-- Google Ads section -->
         <ins class="adsbygoogle"
         style="display:inline-block;width:728px;height:90px"
         data-ad-client="ca-pub-1761286589543980"
@@ -159,19 +155,18 @@
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
+      <!-- Google Ads end -->
 
-        <!-- footer -->
+      <!-- footer -->
         <div class="footer">
-            <p>Copyright by Antonio0806 2022 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
-	    
-	    <!-- <p>Jesli moja szkola chcialaby sie ze mna skontaktowac w sprawie tego co uwazaja za nieodpowiednie i nieporzadane zapraszam na dsc: Antonio0806#2426</p> -->
-	    <!-- <p>Pozdrawiam informatykow z mojej szkoly, ktorzy postanowili zrobic mi jakiegos smiesznego ddos=a xddddddd</p> -->
-	    <!-- <p>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!</p> --> <!-- Specjalnie dla menelusa -->
+          <p>Copyright by Antonio0806 2022 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
+	        <!-- <p>Jesli moja szkola chcialaby sie ze mna skontaktowac w sprawie tego co uwazaja za nieodpowiednie i nieporzadane zapraszam na dsc: Antonio0806#2426</p> -->
+	        <!-- <p>Pozdrawiam informatykow z mojej szkoly, ktorzy postanowili zrobic mi jakiegos smiesznego ddos=a xddddddd</p> -->
+	        <!-- <p>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!</p> --> <!-- Specjalnie dla menelusa -->
         </div>  
-        </div>
+      </div>
     </div>
-        <script src="js/main.js"></script>
-    </body>
+  </body>
 </html>
 
 
