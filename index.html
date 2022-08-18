@@ -7,109 +7,108 @@
         <meta author content="Antonio0806">
         <link rel="text/javascript" href="./js/main.js"/>
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Lato');
-            body, html {
-                height: 100%;
-            }
-
+          @import url('https://fonts.googleapis.com/css?family=Lato');
+           body, html {
+               height: 100%;
+           }
             body {
-                font-family: 'Lato', sans-serif;
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-
+               font-family: 'Lato', sans-serif;
+               margin: 0 !important;
+               padding: 0 !important;
+           }
             #content, #login_content {
-                height: calc(100% - 5vh);
-                width: calc(100% - 5vh);
-            }
-
+               height: calc(100% - 5vh);
+               width: calc(100% - 5vh);
+           }
             #header {
-                display:flex;
-                text-align:right;
-                padding:6px
-            }
-		
-            .footer {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                margin: 5050;
-                color: black;
-                text-align: center;
-            }
-            #loaderball{
-                width: 30px;
-                height: 30px;
-                height: 40em;
-                position: relative;
-                animation-name: ckw;
-                animation-duration: 15.5s;
-                animation-iteration-count: infinite;
-                transform-origin: 50% 50%;
-                display: inline-block;
-            }
-            @keyframes ckw {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
+               display:flex;
+               text-align:right;
+               padding:6px
+           }
+	
+           .footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               margin: 5050;
+               color: black;
+               text-align: center;
+           }
+           #loaderball{
+               width: 30px;
+               height: 30px;
+               height: 40em;
+               position: relative;
+               animation-name: ckw;
+               animation-duration: 15.5s;
+               animation-iteration-count: infinite;
+               transform-origin: 50% 50%;
+               display: inline-block;
+           }
+           @keyframes ckw {
+               0% {
+                   transform: rotate(0deg);
+               }
+               100% {
                     transform: rotate(360deg);
-                }
-            }
-            @media screen and (max-width: 481px){
-                #content, #login_content {
-                    text-align: center;
-                }
-            }
-
+               }
+           }
+           @media screen and (max-width: 481px){
+               #content, #login_content {
+                   text-align: center;
+               }
+           }
             #mySidenav a {
-              position: absolute; /* Position them relative to the browser window */
-              transition: 0.3s; /* Add transition on hover */
-              padding: 15px; /* 15px padding */
-              width: 100px; /* Set a specific width */
-              text-decoration: none; /* Remove underline */
-              font-size: 15px; /* Increase font size */
-              color: white; /* White text color */
-              border-radius: 5px 5px 5px 5px; /* Rounded corners on the top right and bottom right side */
-              text-align: center;
-            }
-  
-            #mySidenav a:hover {
-              width: 150px; /* On mouse-over, make the elements appear as they should */
-            }
-  
-            /* The about link: 20px from the top with a green background */
-            #about {
-              top: 150px;
-              background-color: #04AA6D; /* Lime */
-            }
-  
-            #blog {
-              top: 210px;
-              background-color: #2196F3; /* Blue */
-            }
-  
-            #projects {
-              top: 270px;
-              background-color: #f44336; /* Red */
-            }
-  
-            #contact {
-              top: 330px;
-              background-color: #555 /* Light Black */
-            }
-
+             position: absolute; /* Position them relative to the browser window */
+             transition: 0.3s; /* Add transition on hover */
+             padding: 15px; /* 15px padding */
+             width: 100px; /* Set a specific width */
+             text-decoration: none; /* Remove underline */
+             font-size: 15px; /* Increase font size */
+             color: white; /* White text color */
+             border-radius: 0px 5px 5px 0px; /* Rounded corners on the top right and bottom right side */
+             text-align: center;
+             left:0px;
+           }
+ 
+           #mySidenav a:hover {
+             width: 150px; /* On mouse-over, make the elements appear as they should */
+           }
+ 
+           /* The about link: 20px from the top with a green background */
+           #about {
+             top: 150px;
+             background-color: #04AA6D; /* Lime */
+           }
+ 
+           #blog {
+             top: 210px;
+             background-color: #2196F3; /* Blue */
+           }
+ 
+           #projects {
+             top: 270px;
+             background-color: #f44336; /* Red */
+           }
+ 
+           #gallery {
+             top: 330px;
+             background-color: #555 /* Light Black */
+           }
             #subitolauncher {
-              top: 390px;
-              background-color: #2196F3 /* Light Blue */
-            }
-
+             top: 390px;
+             background-color: #2196F3 /* Light Blue */
+           }
             #funkcje-zhp {
-              top: 450px;
-              background-color: #01ff2b /* Light Green */
-            }
-      </style>
+             top: 450px;
+             background-color: #01ff2b /* Light Green */
+           }
+           #dashboard {
+             top: 510px;
+             background-color: aqua;
+           }
+        </style>
         <script src="js/main.js"></script>
         <script src="js/skrypcik.js"></script>
         <script src="js/jquery.min.js"></script>
@@ -137,9 +136,10 @@
             <a href="http://santosubito.xyz/about.html" id="about">About</a>
             <a href="http://santosubito.xyz/wchat/wchat.php" id="blog">WChat</a>
             <a href="http://santosubito.xyz/subitolauncher/" id="subitolauncher">SubitoLauncher</a>
-            <a href="http://santosubito.xyz/gallery.html" id="contact">Gallery</a>
+            <a href="http://santosubito.xyz/gallery.html" id="gallery">Gallery</a>
             <a href="http://santosubito.xyz/saper.html" id="projects">Saper</a>
-            <a href="http://santosubito.xyz/sim-zhp.html" id="funkcje-zhp">Tabela funkcji ZHP</a>
+            <a href="http://santosubito.xyz/sim-zhp.html" id="funkcje-zhp">Funkcje ZHP</a>
+            <a href="https://personal.santosubito.xyz/dashboard" id="dashboard">Dashboard</a>
         </div>
       <!-- Google Ads section -->
         <ins class="adsbygoogle"
