@@ -6,6 +6,7 @@
         <meta keywords content="papaj, jp2gmd, januszpawlacz, jp2, molte, volte, santo, subito">
         <meta author content="Antonio0806">
         <link rel="text/javascript" href="./js/main.js"/>
+        <link rel="icon" type="image/x-icon" href="./icon.png">
         <style>
           @import url('https://fonts.googleapis.com/css?family=Lato');
            body, html {
@@ -21,9 +22,9 @@
                width: calc(100% - 5vh);
            }
             #header {
-               display:flex;
-               text-align:right;
-               padding:6px
+              padding: 30px;
+              text-align: center;
+              font-size: 35px;
            }
 	
            .footer {
@@ -62,7 +63,6 @@
             #mySidenav a {
              position: absolute; /* Position them relative to the browser window */
              transition: 0.3s; /* Add transition on hover */
-             padding: 15px; /* 15px padding */
              width: 100px; /* Set a specific width */
              text-decoration: none; /* Remove underline */
              font-size: 15px; /* Increase font size */
@@ -70,8 +70,15 @@
              border-radius: 0px 5px 5px 0px; /* Rounded corners on the top right and bottom right side */
              text-align: center;
              left:0px;
+             -webkit-flex: 1;
+             -ms-flex: 1;
+             flex: 1;
+             padding: 20px;
            }
- 
+           section {
+            display: -webkit-flex;
+            display: flex;
+          }
            #mySidenav a:hover {
              width: 150px; /* On mouse-over, make the elements appear as they should */
            }
@@ -108,6 +115,18 @@
              top: 510px;
              background-color: aqua;
            }
+           @media (max-width: 600px) {
+            section {
+              -webkit-flex-direction: column;
+              flex-direction: column;
+            }
+          }
+          /* Style the content */
+          article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+          }
         </style>
         <script src="js/main.js"></script>
         <script src="js/skrypcik.js"></script>
@@ -121,10 +140,8 @@
         <svg id="loaderball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M222.7 32.15C227.7 49.08 218.1 66.9 201.1 71.94C121.8 95.55 64 169.1 64 255.1C64 362 149.1 447.1 256 447.1C362 447.1 448 362 448 255.1C448 169.1 390.2 95.55 310.9 71.94C293.9 66.9 284.3 49.08 289.3 32.15C294.4 15.21 312.2 5.562 329.1 10.6C434.9 42.07 512 139.1 512 255.1C512 397.4 397.4 511.1 256 511.1C114.6 511.1 0 397.4 0 255.1C0 139.1 77.15 42.07 182.9 10.6C199.8 5.562 217.6 15.21 222.7 32.15V32.15z"/></svg>
     </div>
     <!--Loading screen-->
-
+<div id="header"><img width="700px" height="200px"src="./banner.png"></img></div>
     <div id="maincontentdiv">
-        <div id="content">
-        <img width="700px" height="200px"src="./banner.png"></img>
         <!--<ul><a href="http://santosubito.xyz/sc">SantoChan (ImageBoard)</a></ul>
         <ul><a href="http://santosubito.xyz/wchat/wchat.php" target="_blank">WadowiceChat (ChatClient)</a></ul>
         <ul><a href="http://santosubito.xyz/saper.html" target="_blank">Saper</a></ul>
@@ -141,6 +158,10 @@
             <a href="https://santosubito.xyz/sim-zhp.html" id="funkcje-zhp">Funkcje ZHP</a>
             <a href="https://login.santosubito.xyz/dashboard" id="dashboard">Dashboard</a>
         </div>
+        <article>
+
+        </article>
+    <footer>
       <!-- Google Ads section -->
         <ins class="adsbygoogle"
         style="display:inline-block;width:728px;height:90px"
@@ -150,12 +171,10 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
       <!-- Google Ads end -->
-
-        <div class="footer">
-          <p>Copyright by Antonio0806 2022 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
-	        <!-- <p>Jesli moja szkola chcialaby sie ze mna skontaktowac w sprawie tego co uwazaja za nieodpowiednie i nieporzadane zapraszam na dsc: Antonio0806#2426</p> -->
-	        <!-- <p>Pozdrawiam informatykow z mojej szkoly, ktorzy postanowili zrobic mi jakiegos smiesznego ddos=a xddddddd</p> -->
-        </div>  
+      <p>Copyright by Antonio0806 2022 Privacy policy: <a href="http://santosubito.xyz/ppolicy.php">click</a></p>
+	    <!-- <p>Jesli moja szkola chcialaby sie ze mna skontaktowac w sprawie tego co uwazaja za nieodpowiednie i nieporzadane zapraszam na dsc: Antonio0806#2426</p> -->
+	    <!-- <p>Pozdrawiam informatykow z mojej szkoly, ktorzy postanowili zrobic mi jakiegos smiesznego ddos=a xddddddd</p> -->  
+    </footer>
       </div>
     </div>
   </body>
